@@ -1,0 +1,42 @@
+name: Test literature
+
+on:
+  push:
+    branches: [ '**' ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11"]
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '21'
+    - name: Test literature
+      uses: xu-cheng/texlive-action@v2
+      with:
+        scheme: small
+        run: |
+          tlmgr install csquotes
+          ./run test
+    - name: Archive logs
+      uses: actions/upload-artifact@v4
+      with:
+        name: Logs
+        path: test/log
+        retention-days: 30
+    - name: Archive PDFs
+      uses: actions/upload-artifact@v4
+      with:
+        name: PDFs
+        path: test/pdf
+        retention-days: 30

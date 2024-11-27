@@ -1,0 +1,4 @@
+bibtexparser==1.4.2
+pyparsing==3.2.0
+PyYAML==6.0.2
+titlecase==2.4.1
