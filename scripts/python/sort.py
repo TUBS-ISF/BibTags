@@ -111,6 +111,8 @@ def sort_key(entry):
 def sort_key_year(year):
     return -int(year)
 
+def sort_key_natural(field_name):
+    return [(int(c) if c.isdigit() else c) for c in re.split(r'(\d+)', field_name)]
 
 def create_parser():
     parser = BibTexParser(common_strings=False,interpolate_strings=False)
@@ -133,7 +135,7 @@ def print_entries_of_year(f, cur_year_entries):
         for field in field_order:
             if field in entry:
                 s += print_field(entry, field)
-        extra_fields = sorted([field for field in entry if not field in field_order and not field in ['ENTRYTYPE', 'ID']])
+        extra_fields = sorted([field for field in entry if not field in field_order and not field in ['ENTRYTYPE', 'ID']], key=sort_key_natural)
         for field in extra_fields:
             s += print_field(entry, field)
         s += '}\n\n'
