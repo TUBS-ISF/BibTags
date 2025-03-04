@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 python_env="python_bibtags"
 
 if [ -d "python/${python_env}" ]; then

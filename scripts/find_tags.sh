@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Usage: ./find_tags.sh [tt|ek|...]
 
 # This script finds all tags used by one workgroup member in the literature.bib file.
