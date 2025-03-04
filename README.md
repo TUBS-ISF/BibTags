@@ -3,13 +3,11 @@
 This is BibTags. A bibtex library containing many literature references to papers in computer science with a focus on variability and software product lines.
 
 ## How To Use
-
 1. Clone this repo or add as a submodule
 2. Run `./run clean`.
 3. Use `MYshort.bib` and `literature-cleaned.bib` as bibliography files in your LaTeX document
 
 ## How to Edit
-
 1. Clone this repo
 2. Create a branch
 3. Modify `literature.bib` and if necessary `MYshort.bib` and `MYabrv.bib`. __Pay attention to the policies and hints below!__
@@ -17,6 +15,20 @@ This is BibTags. A bibtex library containing many literature references to paper
 5. Run `./run test`. __Pay attention to the console output! On error or warning go to 3.__
 6. Commit and push your changes
 7. Make a pull request to the original repo
+
+## Sorting Order
+Entries and their fields are sorted by the `sort` script.
+- Entries are sorted by 
+  - publication status (unpublished or published) (determined by the `toappear` note)
+  - year
+  - type (e.g. article, inproceedings)
+  - month
+  - journal or conference name
+  - bibtex key
+- Fields are sorted depending on the the type of entry. For each entry there is a configurable order of fields (e.g. author, title, booktitle, ...). All fields that are not part of this order are appended in alphabetical order.
+- Strings are not sorted.
+  - Universities are currently sorted by city name
+  - Locations are currently sorted by country and city name
 
 ## Policies
 - **Maintain consistent order of attributes** of entries. If you want to add a new entry, a good strategy is to copy an existing entry of the same type and adapt it.
@@ -78,11 +90,9 @@ Use custom fileds to add addtional information for single entries. **Do not writ
 
 ## DON'Ts
 - **Edit `literature-cleaned.bib`**: This is a generated file. It is generated from literature cleaned with [MibTeX](https://github.com/SoftVarE-Group/MibTeX). After you changed `literature.bib`, you can update `literature-cleaned.bib` by running `clean.sh` / `clean.bat`.
-
 - Commit changes **without running `./run sort` first**.
 
 ## Testing
-
 Many problems with added (and some existing) entries can be detected automatically by running the script `test.sh`.
 This script does multiple checks:
 1. Creates literature-cleaned.bib using mibtex
@@ -96,7 +106,6 @@ This script does multiple checks:
 The script display problems in the console output. However, the complete output of all called tools can be found in individual .log files in the directory `test`. This directory also contains the compiled pdf files, for further manual inspection.
 
 ### check_integrity.py
-
 This script performs multiple checks for all entries in the file `literature.bib`.
 1. Tests that fields declared as string fields contain only string values.
 2. Creates bibtex strings for fields that are declared as string fields but do not contains string values and prints them to the console.
