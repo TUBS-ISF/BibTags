@@ -3,7 +3,7 @@
 This is BibTags, a BibTeX library that contains many curated literature references to papers in computer science, with a focus on variability and software product lines.
 
 ## How To Use
-1. Clone this repo or add as a submodule (e.g., `git clone https://github.com/TUBS-ISF/BibTags.git`)
+1. Clone this repo (e.g., `git clone https://github.com/TUBS-ISF/BibTags.git`) or add as a submodule (e.g., `git submodule add https://github.com/TUBS-ISF/BibTags.git`)
 2. Run `./run clean`
 3. Use `MYshort.bib` and `literature-cleaned.bib` as bibliography files in your LaTeX document
 
@@ -56,7 +56,7 @@ Entries and their fields are sorted by the `sort` script.
 - **Month and Year**: 
   - **Journal Articles**: The publication month and year of a journal is that when the issue (not the article) is published. DBLP seems to have solid knowledge on that (compared to Springer's own website).
   - **For theses**, we always use the month when the thesis was defended (not when it is submitted and not when it is finally published, which might happen much later).
-  - **For conferences**, the month and year is typically the first day of the conference. As SPLC was in August and September, both months were used.
+  - **For conferences**, we use the month and year of the conference event. When a conference happens to be held on the boundary between two months, we use the month of the first conference day.
 - When adding **unpublished articles**, try to already add the DOI. Helps to keep track of the publication status.
 
 ### Policies for Theses
@@ -72,7 +72,7 @@ Entries and their fields are sorted by the `sort` script.
 ## Policies for Updating Existing Entries
 - When a paper happens to become **subsumed**, please change the key.
   This way, we make sure to update all references of outdated publications.
-  In addition, you may want to use the subsumedby field.
+  In addition, you may want to use the `subsumedby` field.
 
 ## Tips and Tricks
 - When checking whether all your papers are **complete**, it is helpful to compare all papers on your website (or in Bibtags) with those being listed in ACM, DBLP and Google Scholar.
