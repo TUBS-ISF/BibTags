@@ -15,3 +15,4 @@
 *.bcf
 *.run.xml
 *.pdf
+*.synctex*
