@@ -1,10 +1,10 @@
 # BibTags
 
-This is BibTags. A bibtex library containing many literature references to papers in computer science with a focus on variability and software product lines.
+This is BibTags, a BibTeX library that contains many curated literature references to papers in computer science, with a focus on variability and software product lines.
 
 ## How To Use
-1. Clone this repo or add as a submodule
-2. Run `./run clean`.
+1. Clone this repo or add as a submodule (e.g., `git clone https://github.com/TUBS-ISF/BibTags.git`)
+2. Run `./run clean`
 3. Use `MYshort.bib` and `literature-cleaned.bib` as bibliography files in your LaTeX document
 
 ## How to Edit
@@ -14,21 +14,23 @@ This is BibTags. A bibtex library containing many literature references to paper
 4. Run `./run sort`. __Pay attention to the console output! On error go to 3.__
 5. Run `./run test`. __Pay attention to the console output! On error or warning go to 3.__
 6. Commit and push your changes
-7. Make a pull request to the original repo
+7. Make a pull request to the original repo, which will be reviewed by an ISF member
 
 ## Sorting Order
 Entries and their fields are sorted by the `sort` script.
 - Entries are sorted by 
-  - publication status (unpublished or published) (determined by the `toappear` note)
+  - publication status (unpublished or published, determined by the `toappear` note)
   - year
-  - type (e.g. article, inproceedings)
+  - type (e.g. `article`, `inproceedings`)
   - month
   - journal or conference name
-  - bibtex key
-- Fields are sorted depending on the the type of entry. For each entry there is a configurable order of fields (e.g. author, title, booktitle, ...). All fields that are not part of this order are appended in alphabetical order.
+  - BibTeX key
+- Fields are sorted depending on the type of entry.
+  For each entry there is a configurable order of fields (e.g. author, title, booktitle, ...).
+  All fields that are not part of this order are appended in alphabetical order.
 - Strings are not sorted.
-  - Universities are currently sorted by city name
-  - Locations are currently sorted by country and city name
+  - Universities are currently (manually) sorted by city name
+  - Locations are currently (manually) sorted by country and city name
 
 ## Policies
 - **Maintain consistent order of attributes** of entries. If you want to add a new entry, a good strategy is to copy an existing entry of the same type and adapt it.
@@ -48,8 +50,14 @@ Entries and their fields are sorted by the `sort` script.
     	author = {Christian K\"{a}stner and Sven Apel and Martin Kuhlemann},
     	title = {{Granularity in Software Product Lines}},
     	booktitle = ICSE,
-    ...
+    	...
+    }
     ```
+- **Month and Year**: 
+  - **Journal Articles**: The publication month and year of a journal is that when the issue (not the article) is published. DBLP seems to have solid knowledge on that (compared to Springer's own website).
+  - **For theses**, we always use the month when the thesis was defended (not when it is submitted and not when it is finally published, which might happen much later).
+  - **For conferences**, the month and year is typically the first day of the conference. As SPLC was in August and September, both months were used.
+- When adding **unpublished articles**, try to already add the DOI. Helps to keep track of the publication status.
 
 ### Policies for Theses
 - **Keys** of theses are formatted according to the formatting rules described above.
@@ -61,28 +69,38 @@ Entries and their fields are sorted by the `sort` script.
 - **Add `type` for bachelor, master, and project thesis**. These theses should be specified as `@mastersthesis` as it is the only bibtex entry type for thesis (apart from `@phdthesis`). Distinguish between different types of theses by using `type = Bachelor`, `type = Master`, or `type = Project` respectively.
 - **For theses written in german** add `note = {In German}`.
 
+## Policies for Updating Existing Entries
+- When a paper happens to become **subsumed**, please change the key.
+  This way, we make sure to update all references of outdated publications.
+  In addition, you may want to use the subsumedby field.
+
+## Tips and Tricks
+- When checking whether all your papers are **complete**, it is helpful to compare all papers on your website (or in Bibtags) with those being listed in ACM, DBLP and Google Scholar.
+  ACM and DBLP do have the best quality in their data.
+
 ## Custom Fields
-Use custom fileds to add addtional information for single entries. **Do not write comments inbetween entries.**
+Use custom fileds to add additional information for single entries. **Do not write comments in between entries.**
 - **comments**: Contains miscellaneous comments for this entry.
   - Common strings:
-    - NotToBePublished (For Bachelor/Master theses)
-  - Example: `comments = NotToBePublished,`
+    - nottobepublished (For Bachelor/Master theses)
+  - Example: `comments = nottobepublished,`
 
 - **missing**: Documents which information for required fields are unavailable for this entry.
+  `#` can be used to concatenate several strings 
   - Common strings:
-    - NoDOI
-    - NoUrl
-    - NoPages
-    - NoMonth
-    - NoPublisher
-    - NoAddress
-    - NoChapterNo
-  - Example: `missing = NoDOI # NoURL # NoMonth # NoAddress,`
+    - nodoi
+    - nourl
+    - nopages
+    - nomonth
+    - nopublisher
+    - noaddress
+    - nochapterno
+  - Example: `missing = nodoi # nourl # nomonth # noaddress,`
 
-- **subsumes**: Contains all keys of entries, which are subsumed by this entry.
+- **subsumes**: Contains all keys of entries that are subsumed by this entry.
   - Example: `subsumes = {RBP+:TR22,RPTS:FORTE22,RPTS:TR22},`
 
-- **subsumedby**: Contains key of the entry, which subsumes this entry.
+- **subsumedby**: Contains the key of the entry that subsumes this entry.
   - Example: `subsumedBy = {RBP+:LMCS23},`
 
 - **renamedFrom**: Contains previous keys of this entry.
@@ -93,15 +111,15 @@ Use custom fileds to add addtional information for single entries. **Do not writ
 - Commit changes **without running `./run sort` first**.
 
 ## Testing
-Many problems with added (and some existing) entries can be detected automatically by running the script `test.sh`.
-This script does multiple checks:
+Many problems with added (and some existing) entries can be detected automatically by running `./run test`.
+This does multiple checks:
 1. Creates literature-cleaned.bib using mibtex
 2. Compiles bib files with latex
   1. Using biblatex and biber to compile `literature.bib` and `MYshort.bib`
   2. Using biblatex and biber to compile `literature.bib` and `MYabrv.bib`
   3. Using natbib and bibtex to compile `literature.bib` and `MYshort.bib`
   4. Using natbib and bibtex to compile `literature-cleaned.bib` and `MYshort.bib`
-3. Runs python script `scripts/check_integrity.py`
+3. Runs python script `scripts/python/check_integrity.py`
 
 The script display problems in the console output. However, the complete output of all called tools can be found in individual .log files in the directory `test`. This directory also contains the compiled pdf files, for further manual inspection.
 
