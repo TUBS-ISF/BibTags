@@ -144,3 +144,7 @@ The script can be configured using the following files
         - number
       ```
 - `scripts/test/config_string.yaml`: Declares which fields should contain bibtex strings instead of literals.
+
+## Troubleshooting
+
+- If you encounter the error message `short-natbib bibtex (Run 1/2)...fail` without any further error messages, try to find the biber cache with `biber --cache` and remove it.
