@@ -21,6 +21,9 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '21'
+    - name: Check sorting of literature
+      run: |
+        ./run sorted
     - name: Test literature
       uses: xu-cheng/texlive-action@v2
       with:
