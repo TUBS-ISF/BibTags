@@ -148,11 +148,7 @@ if __name__ == '__main__':
         exit()
 
     if os.path.exists(backup_file):
-        overwrite = input("Backup file " + backup_file + " already exists. Overwrite? [y/N] ")
-        if overwrite == 'y':
-            os.remove(backup_file)
-        else:
-            quit()
+        os.remove(backup_file)
     shutil.copyfile(database_file, backup_file)
 
     if os.path.exists(output_file):
