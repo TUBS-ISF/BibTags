@@ -142,12 +142,14 @@ There are several options:
   set -e
   ./run sorted
   ./run test' > .git/hooks/pre-commit
+  chmod +x .git/hooks/pre-commit
   ```
 - Check for sorting only (this runs much faster than the previous option, but won't catch all mistakes):
   ```
   echo '#!/bin/sh
   set -e
   ./run sorted' > .git/hooks/pre-commit
+  chmod +x .git/hooks/pre-commit
   ```
 - To completely disable local checking again (the default state):
   ```
