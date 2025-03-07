@@ -33,7 +33,7 @@ change_into_latex_dir () {
 ## Deletes only files.
 delete_auxiliary_files () {
 	echo -e -n "${GREEN}delete auxiliary files in latex dir...${NOCOLOR}"
-	if find . -mindepth 1 -maxdepth 1 -type f ! -name "*.tex" -delete ; then
+	if find . -mindepth 1 -maxdepth 1 -type f ! -name "*.tex" ! -name .gitignore -delete ; then
 		echo -e "${GREEN}OK${NOCOLOR}"
 	else
 		echo -e "${RED}FAIL${NOCOLOR}"
