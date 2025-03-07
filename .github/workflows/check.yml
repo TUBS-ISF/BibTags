@@ -12,6 +12,9 @@ jobs:
       matrix:
         python-version: ["3.11"]
     steps:
+    - name: Check sorting of literature
+      run: |
+        ./run sorted
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
@@ -21,9 +24,6 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '21'
-    - name: Check sorting of literature
-      run: |
-        ./run sorted
     - name: Test literature
       uses: xu-cheng/texlive-action@v2
       with:
