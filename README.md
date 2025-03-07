@@ -16,6 +16,8 @@ This is BibTags. A bibtex library containing many literature references to paper
 6. Commit and push your changes
 7. Make a pull request to the original repo
 
+*Life hack: Enable a pre-commit hook to enforce steps 4 and 5 (see below).*
+
 ## Sorting Order
 Entries and their fields are sorted by the `sort` script.
 - Entries are sorted by 
@@ -126,3 +128,32 @@ The script can be configured using the following files
         - number
       ```
 - `scripts/test/config_string.yaml`: Declares which fields should contain bibtex strings instead of literals.
+
+### Good practice: Check locally
+
+To detect typical problems, running `./run sort` and `./run test` are crucial.
+By default, you have to manually remember to do this, which is easy to forget.
+You can optionally enable a pre-commit hook that always performs certain checks locally before allowing a commit.
+There are several options:
+
+- Check for sorting + test literature (this effectively executes the CI pipeline locally):
+  ```
+  echo '#!/bin/sh
+  set -e
+  ./run sorted
+  ./run test' > .git/hooks/pre-commit
+  ```
+- Check for sorting only (this runs much faster than the previous option, but won't catch all mistakes):
+  ```
+  echo '#!/bin/sh
+  set -e
+  ./run sorted' > .git/hooks/pre-commit
+  ```
+- To completely disable local checking again (the default state):
+  ```
+  rm -f .git/hooks/pre-commit
+  ```
+- To skip checking only on a single commit, run:
+  ```
+  git commit --no-verify
+  ```
