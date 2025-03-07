@@ -1,4 +1,4 @@
-name: Test literature
+name: Check literature
 
 on:
   push:
