@@ -1,6 +1,6 @@
 scripts/python/python_bibtags
-literature/literature-cleaned.bib
-literature/literature.backup.bib
+literature/literature-*.bib
+literature/literature.*.bib
 literature/pdf
 literature/log
 test/
