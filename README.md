@@ -138,7 +138,7 @@ There are several options:
 
 - Check for sorting + test literature (this effectively executes the CI pipeline locally):
   ```
-  echo '#!/bin/sh
+  echo '#!/usr/bin/env sh
   set -e
   ./run sorted
   ./run test' > .git/hooks/pre-commit
@@ -146,7 +146,7 @@ There are several options:
   ```
 - Check for sorting only (this runs much faster than the previous option, but won't catch all mistakes):
   ```
-  echo '#!/bin/sh
+  echo '#!/usr/bin/env sh
   set -e
   ./run sorted' > .git/hooks/pre-commit
   chmod +x .git/hooks/pre-commit
