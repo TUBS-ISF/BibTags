@@ -19,21 +19,22 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v3
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: ${{ matrix.python-version }} 
     - name: Setup Java
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: '21'
     - name: Setup TeX Live
-    - uses: teatimeguest/setup-texlive-action@v3
+      uses: teatimeguest/setup-texlive-action@v3
       with:
         packages: |
           scheme-basic
           csquotes
+          natbib
+          biblatex
     - name: Test literature
-      run: |
-        ./run test
+      run: ./run test
     - name: Archive logs
       uses: actions/upload-artifact@v4
       with:
