@@ -25,11 +25,11 @@ jobs:
         distribution: 'temurin'
         java-version: '21'
     - name: Test literature
-      uses: xu-cheng/texlive-action@v2
+      uses: teatimeguest/setup-texlive-action@v3
       with:
-        scheme: small
+        packages: scheme-basic |
+          csquotes
         run: |
-          tlmgr install csquotes
           ./run test
     - name: Archive logs
       uses: actions/upload-artifact@v4
