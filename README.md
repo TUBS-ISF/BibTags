@@ -147,4 +147,8 @@ The script can be configured using the following files
 
 ## Troubleshooting
 
-- If you encounter the error message `short-natbib bibtex (Run 1/2)...fail` without any further error messages, try to find the biber cache with `biber --cache` and remove it.
+- If you encounter the error message `short-natbib bibtex (Run 1/2)...fail` without any further error messages, try to clear the biber cache:
+  ```
+  biber --cache # check path first
+  rm -rf "$(biber --cache)" # then remove
+  ```
