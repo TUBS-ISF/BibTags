@@ -26,7 +26,8 @@ jobs:
         java-version: '21'
     - uses: teatimeguest/setup-texlive-action@v3
       with:
-        packages: scheme-basic |
+        packages:  |
+          scheme-basic
           csquotes
     - name: Test literature
       run: |
