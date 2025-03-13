@@ -33,6 +33,7 @@ jobs:
           csquotes
           natbib
           biblatex
+          biber
     - name: Test literature
       run: ./run test
     - name: Archive logs
