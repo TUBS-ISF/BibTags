@@ -12,25 +12,30 @@ jobs:
       matrix:
         python-version: ["3.11"]
     steps:
-    - uses: actions/checkout@v4
+    - name: Checking out repository
+      uses: actions/checkout@v4
     - name: Check sorting of literature
-      run: |
-        ./run sorted
-    - name: Set up Python ${{ matrix.python-version }}
+      run: ./run sorted
+    - name: Setup Python
       uses: actions/setup-python@v3
       with:
-        python-version: ${{ matrix.python-version }}
-    - uses: actions/setup-java@v4
+        python-version: ${{ matrix.python-version }} 
+    - name: Setup Java
+      uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: '21'
-    - name: Test literature
-      uses: xu-cheng/texlive-action@v2
+    - name: Setup TeX Live
+      uses: teatimeguest/setup-texlive-action@v3
       with:
-        scheme: small
-        run: |
-          tlmgr install csquotes
-          ./run test
+        packages: |
+          scheme-basic
+          csquotes
+          natbib
+          biblatex
+          biber
+    - name: Test literature
+      run: ./run test
     - name: Archive logs
       uses: actions/upload-artifact@v4
       with:
