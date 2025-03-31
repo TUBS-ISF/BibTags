@@ -1,6 +1,5 @@
 scripts/python/python_bibtags
 literature/literature-*.bib
-literature/literature.*.bib
 literature/pdf
 literature/log
 test/

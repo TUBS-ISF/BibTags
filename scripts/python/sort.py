@@ -8,7 +8,7 @@ import math
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 database_file = '../literature/literature.bib'
-backup_file = '../literature/literature.backup.bib'
+backup_file = '../literature/literature-backup.bib'
 output_file = '../literature/literature.bib'
 comment_pattern = re.compile(r'^%+\s*([a-zA-Z\s]+)\s+%+$', re.M)
 special_char_pattern = re.compile(r'[^a-zA-Z0-9]')
