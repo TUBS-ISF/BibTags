@@ -3,3 +3,4 @@ literature/literature-*.bib
 literature/pdf
 literature/log
 test/
+.vscode/
