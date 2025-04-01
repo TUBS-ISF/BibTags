@@ -71,7 +71,7 @@ move_output_files () {
 ## This function creates the literature-cleaned.bib file by calling a dedicated java program.
 create_cleaned_literature () {
 	echo -e -n "${GREEN}create literature-cleaned.bib...${NOCOLOR}"
-	if java -cp mibtex/mibtex-cleaner.jar de.mibtex.BibtexCleaner "../literature/literature.bib" > ../test/log/mibtex_cleaner.log ; then
+	if java -cp mibtex/MibTeX.jar de.mibtex.BibtexCleaner "../literature/literature.bib" > ../test/log/mibtex_cleaner.log ; then
 		echo -e "${GREEN}OK${NOCOLOR}"
 	else
 		echo -e "${RED}FAIL${NOCOLOR}"
