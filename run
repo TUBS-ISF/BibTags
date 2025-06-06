@@ -4,11 +4,11 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NOCOLOR='\033[0m'
 
-valid_aliases=('test' 'sort' 'sorted' 'clean' 'cleanto')
+valid_aliases=('test' 'sort' 'sorted' 'clean' 'cleanto' 'tags')
 
 if [ $# -eq 0 ]; then
   echo -e "${RED}No command provided.${NOCOLOR}"
-  echo -e "Valid commands are: ${GREEN}${valid_aliases[@]}${NOCOLOR}"
+  echo -e "Valid commands are: ${GREEN}${valid_aliases[*]}${NOCOLOR}"
   exit 1
 fi
 
@@ -16,12 +16,10 @@ script=$1
 shift
 
 # Check if the program alias is valid
-if [[ ! " ${valid_aliases[@]} " =~ " ${script} " ]]; then
+if [[ ! " ${valid_aliases[*]} " =~ ${script} ]]; then
   echo -e "${RED}Invalid command provided: ${script}${NOCOLOR}"
-  echo -e "Valid commands are: ${GREEN}${valid_aliases[@]}${NOCOLOR}"
+  echo -e "Valid commands are: ${GREEN}${valid_aliases[*]}${NOCOLOR}"
   exit 1
 fi
 
-cd "scripts"
-
-"./${script}.sh" "$@"
+(cd "$(dirname "$0")/scripts" || exit 1; "./${script}.sh" "$@")
