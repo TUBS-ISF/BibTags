@@ -5,11 +5,20 @@ import re
 import os
 import shutil
 import math
+import sys
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-database_file = '../literature/literature.bib'
-backup_file = '../literature/literature-backup.bib'
-output_file = '../literature/literature.bib'
+
+# Default relative paths
+default_database_file = os.path.join(script_dir, '../../literature/literature.bib')
+backup_file = os.path.join(script_dir, '../../literature/literature-backup.bib')
+
+# Allow override via first command-line argument
+custom_path = sys.argv[1] if len(sys.argv) > 1 else None
+database_file = os.path.abspath(custom_path) if custom_path else default_database_file
+output_file = database_file
+
+# Regex patterns
 comment_pattern = re.compile(r'^%+\s*([a-zA-Z\s]+)\s+%+$', re.M)
 special_char_pattern = re.compile(r'[^a-zA-Z0-9]')
 line_ending_pattern = re.compile(r'\s*[\n\r]+\s*')
