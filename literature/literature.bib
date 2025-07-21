@@ -55,6 +55,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Locations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+@String{houston = "Houston, TX, USA"}
+@String{rennes = "Rennes, France"}
+@String{bern = "Bern, Switzerland"}
+@String{florence = "Florence, Italy"}
+@String{rochester = "Rochester, MI, USA"}
 @String{acoruna = "A Coru{\~n}a, Spain"}
 @String{sydney = "Sydney, Australia"}
 @String{waterlooaustralia = "Waterloo, Australia"}
@@ -224,7 +229,6 @@
 	address   = ny,
 	year      = 2025,
 	ektags    = {KConfig, Linux, configurability},
-	issn      = {1557-7392},
 }
 
 @inproceedings{K:SPLC25,
@@ -238,7 +242,7 @@
 	address   = ny,
 	month     = sep,
 	year      = 2025,
-	ektags    = {Linux, meta-analysis, complexity, evolution, KConfig, model counting, satisfiability},
+	ektags    = {Linux, meta-analysis, complexity, evolution, KConfig},
 }
 
 @inproceedings{BPKA:EASE25,
@@ -277,19 +281,6 @@
 	ektags    = {KConfig},
 }
 
-@inproceedings{KTK:VaMoS25,
-	author    = {Kuiter, Elias and Th{\"{u}}m, Thomas and Kehrer, Timo},
-	title     = {{Teach Variability! A Modern University Course on Software Product Lines}},
-	booktitle = vamos20,
-	note      = toappear,
-	publisher = acm,
-	address   = ny,
-	month     = feb,
-	year      = 2025,
-	ektags    = {teaching},
-	keywords  = {software product lines, software engineering teaching, software product line teaching, variability modeling},
-}
-
 @inproceedings{A:FSE25Companion,
 	author    = {Antinyan, Vard},
 	title     = {{Pursuit of Automotive Software Variant Reduction for Engineering Simplicity}},
@@ -311,7 +302,8 @@
 	address   = germany,
 	month     = may,
 	year      = 2025,
-	typo3tags = {SupervisorEK, SupervisorTT},
+	ektags    = {supervised thesis},
+	typo3tags = {SupervisorTT},
 }
 
 @mastersthesis{Vill25,
@@ -348,7 +340,7 @@
 	author    = {He{\ss}, Tobias and Ostheimer, Lukas and Betz, Tobias and Karrer, Simon and Schmidt, Tim Jannik and Coquet, Pierre and Semmler, Sean and Th{\"u}m, Thomas},
 	title     = {{variability.dev: Towards an Online Toolbox for Feature Modeling}},
 	booktitle = modevar,
-	location  = {Bern, Switzerland},
+	location  = bern,
 	note      = toappear,
 	month     = feb,
 	year      = 2024,
@@ -474,6 +466,19 @@
 	keywords  = {software quality, adaptive learning},
 }
 
+@inproceedings{KTK:VaMoS25,
+	author    = {Kuiter, Elias and Th{\"{u}}m, Thomas and Kehrer, Timo},
+	title     = {{Teach Variability! A Modern University Course on Software Product Lines}},
+	booktitle = vamos20,
+	location  = rennes,
+	doi       = {10.1145/3715340.3715441},
+	publisher = acm,
+	address   = ny,
+	month     = feb,
+	year      = 2025,
+	ektags    = {teaching},
+}
+
 @inproceedings{SBK+:VaMoS25,
 	author    = {Sundermann, Rahel and B{\"{o}}hm, Sabrina and Krieter, Sebastian and Lochau, Malte and Th{\"{u}}m, Thomas},
 	title     = {{Covering T-Wise Interactions of Deployed Configurations}},
@@ -497,6 +502,41 @@
 	address   = ny,
 	year      = 2025,
 	ektags    = {differencing},
+}
+
+@mastersthesis{Alfish25,
+	author    = {Alfish, Rami},
+	title     = {{Evaluierung von ConfigFix als Werkzeug zur Extraktion KConfig-basierter Feature-Modelle}},
+	type      = master,
+	school    = unimagdeburg,
+	note      = {In German},
+	address   = germany,
+	month     = may,
+	year      = 2025,
+	ektags    = {supervised thesis, KConfig},
+}
+
+@mastersthesis{Braun25,
+	author    = {Braun, Urs-Benedict},
+	title     = {{Automatisierte Feature-Modell-Analyse des Linux-Kernels: Eine Reise durch die Zeit}},
+	type      = bachelor,
+	school    = unimagdeburg,
+	note      = {In German},
+	address   = germany,
+	month     = may,
+	year      = 2025,
+	ektags    = {supervised thesis, KConfig, Linux},
+}
+
+@mastersthesis{Ketzler25,
+	author    = {Ketzler, Eric},
+	title     = {{Extracting Hierarchies from Kconfig-Based Feature Models}},
+	type      = bachelor,
+	school    = unimagdeburg,
+	address   = germany,
+	month     = mar,
+	year      = 2025,
+	ektags    = {supervised thesis, KConfig},
 }
 
 @mastersthesis{Shulimov25,
@@ -538,10 +578,10 @@
 	title     = {{Pseudo-Boolean d-DNNF Compilation for Expressive Feature Modeling Constructs}},
 	number    = {arXiv:2505.05976},
 	institution = arxiv,
-	note      = {Submitted to TSE},
 	doi       = {10.48550/arXiv.2505.05976},
 	month     = may,
 	year      = 2025,
+	ektags    = {knowledge compilation},
 }
 
 @techreport{KMP+:TR25subsumedbyKMP+:TOSEM25,
@@ -585,7 +625,6 @@
 }
 
 @article{SKH+:AMAI24,
-	renamedfrom = {SKH+:AMAI23},
 	author    = {Sundermann, Chico and Kuiter, Elias and He{\ss}, Tobias and Raab, Heiko and Krieter, Sebastian and Th{\"{u}}m, Thomas},
 	title     = {{On the Benefits of Knowledge Compilation for Feature-Model Analyses}},
 	journal   = amai,
@@ -769,7 +808,7 @@
 	address   = ny,
 	month     = sep,
 	year      = 2024,
-	ektags    = {tooling},
+	ektags    = {UVL},
 }
 
 @inproceedings{DHK:SPLC24,
@@ -906,7 +945,7 @@
 	address   = ny,
 	month     = sep,
 	year      = 2024,
-	ektags    = {knowledge compilation},
+	ektags    = {extended abstract, knowledge compilation},
 }
 
 @inproceedings{BSM+:FSE24Companion,
@@ -973,7 +1012,7 @@
 	title     = {{Incremental Identification of T-Wise Feature Interactions}},
 	booktitle = vamos20,
 	pages     = {27--36},
-	location  = {Bern, Switzerland},
+	location  = bern,
 	doi       = {10.1145/3634713.3634715},
 	publisher = acm,
 	address   = ny,
@@ -988,7 +1027,7 @@
 	title     = {{Explaining Edits to Variability Annotations in Evolving Software Product Lines}},
 	booktitle = vamos20,
 	pages     = {93--102},
-	location  = {Bern, Switzerland},
+	location  = bern,
 	doi       = {10.1145/3634713.3634725},
 	publisher = acm,
 	address   = ny,
@@ -1004,7 +1043,7 @@
 	title     = {{Generative AI and Software Variability -- A Research Vision}},
 	booktitle = vamos20,
 	pages     = {71--76},
-	location  = {Bern, Switzerland},
+	location  = bern,
 	doi       = {10.1145/3634713.3634722},
 	publisher = acm,
 	address   = ny,
@@ -1019,7 +1058,7 @@
 	title     = {{UnWise: High T-Wise Coverage From Uniform Sampling}},
 	booktitle = vamos20,
 	pages     = {37--45},
-	location  = {Bern, Switzerland},
+	location  = bern,
 	doi       = {10.1145/3634713.3634716},
 	publisher = acm,
 	address   = ny,
@@ -1031,11 +1070,11 @@
 }
 
 @inproceedings{KHS+:VaMoS24,
-	author    = {Kuiter, Elias and He{\ss}, Tobias and Sundermann, Chico and Krieter, Sebastian and Th{\"um}, Thomas and Saake, Gunter},
-	title     = {{How Easy Is SAT-Based Analysis of a Feature Model?}},
+	author    = {Kuiter, Elias and He{\ss}, Tobias and Sundermann, Chico and Krieter, Sebastian and Th{\"{u}}m, Thomas and Saake, Gunter},
+	title     = {{How Easy is SAT-Based Analysis of a Feature Model?}},
 	booktitle = vamos20,
 	pages     = {149--151},
-	location  = {Bern, Switzerland},
+	location  = bern,
 	doi       = {10.1145/3634713.3634733},
 	publisher = acm,
 	address   = ny,
@@ -1050,7 +1089,7 @@
 	title     = {{Kfeature: Rendering the Kconfig System into Feature Models}},
 	booktitle = vamos20,
 	pages     = {134--138},
-	location  = {Bern, Switzerland},
+	location  = bern,
 	doi       = {10.1145/3634713.3634731},
 	publisher = acm,
 	address   = ny,
@@ -1119,7 +1158,7 @@
 	title     = {{Embracing Deep Variability For Reproducibility and Replicability}},
 	booktitle = rep,
 	pages     = {30--35},
-	location  = {Rennes, France},
+	location  = rennes,
 	doi       = {10.1145/3641525.3663621},
 	publisher = acm,
 	address   = ny,
@@ -1291,7 +1330,7 @@
 @proceedings{VaMoS24,
 	title     = {{VaMoS '24: Proceedings of the 18th International Working Conference on Variability Modelling of Software-Intensive Systems}},
 	editor    = {Timo Kehrer and Marianne Huchard and Leopoldo Teixeira and Christian Birchler},
-	location  = {Bern, Switzerland},
+	location  = bern,
 	publisher = acm,
 	address   = ny,
 	month     = feb,
@@ -1854,33 +1893,29 @@
 }
 
 @inproceedings{KKK+:SE23,
-	author    = {Elias Kuiter and Sebastian Krieter and Jacob Kr{\"u}ger and Gunter Saake and Thomas Leich},
+	author    = {Kuiter, Elias and Krieter, Sebastian and Kr{\"{u}}ger, Jacob and Saake, Gunter and Leich, Thomas},
 	title     = {{variED: An Editor for Collaborative, Real-Time Feature Modeling}},
 	booktitle = se,
-	volume    = {{P-322}},
 	pages     = {85--86},
 	location  = paderborn,
-	url       = {https://dl.gi.de/items/d5bf37f9-276f-48a3-8697-7ad8e81a071b},
 	publisher = gi,
 	address   = bonn,
 	month     = feb,
 	year      = 2023,
-	ektags    = {tooling},
+	ektags    = {extended abstract, feature modeling, collaboration},
 }
 
 @inproceedings{KKS+:SE23,
 	author    = {Kuiter, Elias and Krieter, Sebastian and Sundermann, Chico and Th{\"{u}}m, Thomas and Saake, Gunter},
 	title     = {{Tseitin or not Tseitin? The Impact of CNF Transformations on Feature-Model Analyses}},
 	booktitle = se,
-	volume    = {{P-322}},
 	pages     = {83--84},
 	location  = paderborn,
-	url       = {https://dl.gi.de/items/e76f57e9-ce40-4ae0-8489-e068a02aa9ab},
 	publisher = gi,
 	address   = bonn,
 	month     = feb,
 	year      = 2023,
-	ektags    = {CNF transformation},
+	ektags    = {extended abstract, CNF transformation},
 	typo3tags = {FMCounting},
 }
 
@@ -2206,7 +2241,7 @@
 	address   = germany,
 	month     = jun,
 	year      = 2023,
-	ektags    = {CNF transformation},
+	ektags    = {supervised thesis, CNF transformation},
 	typo3tags = {SupervisorSK, SupervisorTT},
 }
 
@@ -2401,13 +2436,11 @@
 @techreport{AKS:TR23,
 	author    = {Adamy, Rick and Kuiter, Elias and Saake, Gunter},
 	title     = {{Exploiting Structure: A Survey and Analysis of Structures and Hardness Measures for Propositional Formulas}},
-	institution = unimagdeburg,
-	doi       = {10.32388/7u1pfg},
-	month     = sep,
+	institution = qeios,
+	doi       = {10.32388/7U1PFG.2},
+	month     = nov,
 	year      = 2023,
-	archiveprefix = {{Qeios}},
 	ektags    = {satisfiability, complexity, structure},
-	eprint    = {7u1pfg},
 }
 
 @techreport{SRH+:TR23subsumedbySRH+:TOSEM24,
@@ -2664,16 +2697,13 @@
 	author    = {Kuiter, Elias and Krieter, Sebastian and Sundermann, Chico and Th{\"{u}}m, Thomas and Saake, Gunter},
 	title     = {{Tseitin or not Tseitin? The Impact of CNF Transformations on Feature-Model Analyses}},
 	booktitle = ase,
-	pages     = {110:1--110:13},
-	location  = {Rochester, MI, USA},
+	location  = rochester,
 	doi       = {10.1145/3551349.3556938},
 	publisher = acm,
 	address   = ny,
 	month     = oct,
 	year      = 2022,
 	ektags    = {CNF transformation},
-	isbn      = {9781450394758},
-	keywords  = {Conjunctive Normal Form, Feature Modeling, Automated Reasoning},
 	typo3tags = {FMCounting},
 }
 
@@ -2839,17 +2869,13 @@
 	author    = {Kuiter, Elias and Kn\"{u}ppel, Alexander and Bordis, Tabea and Runge, Tobias and Schaefer, Ina},
 	title     = {{Verification Strategies for Feature-Oriented Software Product Lines}},
 	booktitle = vamos20,
-	pages     = {12:1--12:9},
-	location  = {Florence, Italy},
-	url       = {https://dl.acm.org/doi/pdf/10.1145/3510466.3511272},
+	location  = florence,
 	doi       = {10.1145/3510466.3511272},
 	publisher = acm,
 	address   = ny,
 	month     = feb,
 	year      = 2022,
-	ektags    = {meta-analysis},
-	isbn      = {9781450396042},
-	keywords  = {Proof Reuse, Deductive Verification, Software Product Lines},
+	ektags    = {formal methods, deductive verification, meta-analysis},
 	tctags    = {classified by Elias/Thomas,theorem proving,optimized product-based analysis,feature-product-based analysis,feature-family-based analysis,feature modules,composition-based implementation,feature-based specification,source code,subsumed by none,KeY,KeYPl,FeatureHouse,variability encoding},
 }
 
@@ -3145,7 +3171,7 @@
 	author    = {Ananieva, Sofia and Greiner, Sandra and Krueger, Jacob and Linsbauer, Lukas and Gruener, Sten and Kehrer, Timo and Kuehn, Thomas and Seidl, Christoph and Reussner, Ralf},
 	title     = {{Unified Operations for Variability in Space and Time}},
 	booktitle = vamos20,
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/3510466.3510483},
 	publisher = acm,
 	address   = ny,
@@ -3255,6 +3281,17 @@
 	typo3tags = {SupervisorCS, SupervisorTT, FMCounting},
 }
 
+@mastersthesis{Khaled22,
+	author    = {Khaled, Mohammed},
+	title     = {{A Semi-Automated Release Management Process for Microservices}},
+	type      = bachelor,
+	school    = unimagdeburg,
+	address   = germany,
+	month     = aug,
+	year      = 2022,
+	ektags    = {supervised thesis, microservices},
+}
+
 @mastersthesis{Lukas22,
 	comments  = nottobepublished,
 	author    = {Lukas, Marc},
@@ -3284,10 +3321,10 @@
 	type      = master,
 	school    = unimagdeburg,
 	note      = {In German},
-	url       = {https://wwwiti.cs.uni-magdeburg.de/iti_db/publikationen/ps/auto/Hohmann2022:MasterThesis.pdf},
 	address   = germany,
-	month     = may,
+	month     = jun,
 	year      = 2022,
+	ektags    = {supervised thesis, SMT solver},
 	typo3tags = {SupervisorSK, SupervisorTT},
 }
 
@@ -3301,6 +3338,18 @@
 	month     = may,
 	year      = 2022,
 	typo3tags = {SupervisorTT},
+}
+
+@mastersthesis{Hauffe22,
+	author    = {Hauffe, Johannes},
+	title     = {{Reengineering einer Microservice-Architektur: Eine Fallstudie am PEGASOS-System}},
+	type      = master,
+	school    = unimagdeburg,
+	note      = {In German},
+	address   = germany,
+	month     = mar,
+	year      = 2022,
+	ektags    = {supervised thesis, microservices},
 }
 
 @mastersthesis{Doering22,
@@ -3337,6 +3386,17 @@
 	month     = jan,
 	year      = 2022,
 	typo3tags = {SupervisorCS, SupervisorTT, FMCounting},
+}
+
+@mastersthesis{Radhakrishnan22,
+	author    = {Radhakrishnan, Logesh Babu},
+	title     = {{System Tools' Firmware Flashing Automation in a Complex Software/Hardware Environment}},
+	type      = master,
+	school    = unimagdeburg,
+	address   = germany,
+	month     = jan,
+	year      = 2022,
+	ektags    = {supervised thesis, embedded systems},
 }
 
 @mastersthesis{Schiessl22,
@@ -3401,6 +3461,7 @@
 	doi       = {10.48550/arxiv.2212.05953},
 	month     = dec,
 	year      = 2022,
+	ektags    = {evolution},
 }
 
 @techreport{RBP+:TR22subsumedbyRBP+:LMCS23,
@@ -3524,17 +3585,16 @@
 }
 
 @article{KKK+:EMSE21,
-	author    = {Elias Kuiter and Sebastian Krieter and Jacob Kr{\"u}ger and Gunter Saake and Thomas Leich},
+	author    = {Kuiter, Elias and Krieter, Sebastian and Kr{\"{u}}ger, Jacob and Saake, Gunter and Leich, Thomas},
 	title     = {{variED: An Editor for Collaborative, Real-Time Feature Modeling}},
 	journal   = emse,
 	volume    = {26},
 	number    = {2},
-	pages     = {24},
 	doi       = {10.1007/s10664-020-09892-x},
 	publisher = springer,
 	month     = mar,
 	year      = 2021,
-	ektags    = {tooling},
+	ektags    = {feature modeling, collaboration},
 	tttags    = {Feature Modeling Tool,Collaborative Feature Modeling},
 }
 
@@ -3888,15 +3948,17 @@
 }
 
 @inproceedings{KKS:VariVolution21,
-	renamedfrom = {KKS+:SPLC21},
 	author    = {Kuiter, Elias and Kr{\"u}ger, Jacob and Saake, Gunter},
 	title     = {{Iterative Development and Changing Requirements: Drivers of Variability in an Industrial System for Veterinary Anesthesia}},
 	booktitle = varivolution,
 	pages     = {113--122},
+	location  = leicester,
 	doi       = {10.1145/3461002.3473950},
 	publisher = acm,
+	address   = ny,
 	month     = sep,
 	year      = 2021,
+	ektags    = {embedded systems},
 }
 
 @inproceedings{BST+:ESECFSE21,
@@ -4510,6 +4572,17 @@
 	month     = jan,
 	year      = 2021,
 	typo3tags = {SupervisorTT},
+}
+
+@mastersthesis{Kuiter20,
+	author    = {Kuiter, Elias},
+	title     = {{Proof Repositories for Correct-by-Construction Software Product Lines}},
+	type      = master,
+	school    = unimagdeburg,
+	address   = germany,
+	month     = jan,
+	year      = 2021,
+	ektags    = {formal methods, deductive verification},
 }
 
 @phdthesis{Young21,
@@ -6278,11 +6351,14 @@
 	author    = {Kuiter, Elias and Krieter, Sebastian and Kr{\"{u}}ger, Jacob and Leich, Thomas and Saake, Gunter},
 	title     = {{Foundations of Collaborative, Real-Time Feature Modeling}},
 	booktitle = splc,
-	pages     = {36:1--36:8},
+	pages     = {257--264},
+	location  = paris,
 	doi       = {10.1145/3336294.3336308},
 	publisher = acm,
+	address   = ny,
 	month     = sep,
 	year      = 2019,
+	ektags    = {feature modeling, collaboration},
 }
 
 @inproceedings{OGB:SPLC19,
@@ -7061,6 +7137,17 @@
 	typo3tags = {SupervisorTT},
 }
 
+@mastersthesis{Kuiter19,
+	author    = {Kuiter, Elias},
+	title     = {{Consistency Maintenance for Collaborative Real-Time Feature Modeling}},
+	type      = bachelor,
+	school    = unimagdeburg,
+	address   = germany,
+	month     = apr,
+	year      = 2019,
+	ektags    = {feature modeling, collaboration},
+}
+
 @mastersthesis{Bittner19,
 	author    = {Bittner, Paul Maximilian},
 	title     = {{SAT Encodings of the At-Most-k Constraint -- A Case Study on Configuring University Courses}},
@@ -7753,9 +7840,7 @@
 	address   = ny,
 	month     = sep,
 	year      = 2018,
-	isbn      = {9781450364645},
-	keywords  = {case study, extraction, software product line, feature modeling},
-	numpages  = {11},
+	ektags    = {clone-and-own},
 }
 
 @inproceedings{KKK+:SPLC18b,
@@ -7763,9 +7848,12 @@
 	title     = {{PCLocator: A Tool Suite to Automatically Identify Configurations for Code Locations}},
 	booktitle = splc,
 	pages     = {284--288},
+	location  = gothenburg,
+	doi       = {10.1145/3233027.3236399},
+	publisher = acm,
+	address   = ny,
 	month     = sep,
 	year      = 2018,
-	conflicts = {KKK+:SPLC18},
 	ektags    = {KConfig, C preprocessor},
 }
 
@@ -8988,7 +9076,7 @@
 	title     = {{Is There a Mismatch Between Real-World Feature Models and Product-Line Research?}},
 	booktitle = esecfse,
 	pages     = {291--302},
-	location  = {Paderborn, Germany},
+	location  = paderborn,
 	doi       = {10.1145/3106237.3106252},
 	publisher = acm,
 	address   = ny,
@@ -9184,7 +9272,7 @@
 	title     = {{Kmax: Finding All Configurations of Kbuild Makefiles Statically}},
 	booktitle = esecfse,
 	pages     = {279--290},
-	location  = {Paderborn, Germany},
+	location  = paderborn,
 	doi       = {10.1145/3106237.3106283},
 	publisher = acm,
 	address   = ny,
@@ -9201,7 +9289,7 @@
 	title     = {{Attributed Variability Models: Outside the Comfort Zone}},
 	booktitle = esecfse,
 	pages     = {268--278},
-	location  = {Paderborn, Germany},
+	location  = paderborn,
 	doi       = {10.1145/3106237.3106251},
 	publisher = acm,
 	address   = ny,
@@ -12128,7 +12216,7 @@
 	booktitle = icse,
 	volume    = {1},
 	pages     = {134--144},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1109/ICSE.2015.35},
 	publisher = ieee,
 	address   = piscataway,
@@ -12140,7 +12228,7 @@
 	title     = {{Symbolic Model Checking of Product-Line Requirements Using SAT-Based Methods}},
 	booktitle = icse,
 	pages     = {189--199},
-	location  = {Florence, Italy},
+	location  = florence,
 	publisher = ieee,
 	address   = piscataway,
 	year      = 2015,
@@ -12155,7 +12243,7 @@
 	title     = {{The ECCO Tool: Extraction and Composition for Clone-and-Own}},
 	booktitle = icse,
 	pages     = {665--668},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1109/ICSE.2015.218},
 	publisher = ieee,
 	address   = piscataway,
@@ -12171,7 +12259,7 @@
 	title     = {{Morpheus: Variability-Aware Refactoring in the Wild}},
 	booktitle = icse,
 	pages     = {380--391},
-	location  = {Florence, Italy},
+	location  = florence,
 	publisher = ieee,
 	address   = piscataway,
 	year      = 2015,
@@ -12184,7 +12272,7 @@
 	title     = {{Presence-Condition Simplification in Highly Configurable Systems}},
 	booktitle = icse,
 	pages     = {178--188},
-	location  = {Florence, Italy},
+	location  = florence,
 	publisher = ieee,
 	address   = piscataway,
 	year      = 2015,
@@ -12198,7 +12286,7 @@
 	title     = {{Views on Internal and External Validity in Empirical Software Engineering}},
 	booktitle = icse,
 	pages     = {9--19},
-	location  = {Florence, Italy},
+	location  = florence,
 	publisher = ieee,
 	address   = piscataway,
 	year      = 2015,
@@ -12242,7 +12330,7 @@
 	title     = {{Partitioning Composite Code Changes to Facilitate Code Review}},
 	booktitle = msr,
 	pages     = {180--190},
-	location  = {Florence, Italy},
+	location  = florence,
 	publisher = ieee,
 	year      = 2015,
 	isbn      = {9780769555942},
@@ -12493,7 +12581,7 @@
 	title     = {{Using Traceability for Incremental Construction and Evolution of Software Product Portfolios}},
 	booktitle = sst,
 	pages     = {57--60},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1109/SST.2015.16},
 	publisher = ieee,
 	address   = piscataway,
@@ -13172,7 +13260,7 @@
 	title     = {{An Overview on Analysis Tools for Software Product Lines}},
 	booktitle = splatools,
 	pages     = {94--101},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2647908.2655972},
 	publisher = acm,
 	address   = ny,
@@ -13190,7 +13278,7 @@
 	title     = {{Similarity-Based Prioritization in Software Product-Line Testing}},
 	booktitle = splc,
 	pages     = {197--206},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2648511.2648532},
 	publisher = acm,
 	address   = ny,
@@ -13208,7 +13296,7 @@
 	title     = {{Feature-Context Interfaces: Tailored Programming Interfaces for Software Product Lines}},
 	booktitle = splc,
 	pages     = {102--111},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2648511.2648522},
 	publisher = acm,
 	address   = ny,
@@ -13225,7 +13313,7 @@
 	title     = {{Potential Synergies of Theorem Proving and Model Checking for Software Product Lines}},
 	booktitle = splc,
 	pages     = {177--186},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2648511.2648530},
 	publisher = acm,
 	address   = ny,
@@ -14071,7 +14159,7 @@
 	title     = {{Feature Location for Software Product Line Migration: A Mapping Study}},
 	booktitle = reve,
 	pages     = {52--59},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2647908.2655967},
 	publisher = acm,
 	address   = ny,
@@ -14135,7 +14223,7 @@
 	title     = {{Abstract Test Case Generation for Behavioural Testing of Software Product Lines}},
 	booktitle = splat,
 	pages     = {86--93},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2647908.2655971},
 	publisher = acm,
 	address   = ny,
@@ -14151,7 +14239,7 @@
 	title     = {{Software Product Line Analysis With mCRL2}},
 	booktitle = splatools,
 	pages     = {78--85},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2647908.2655970},
 	publisher = acm,
 	address   = ny,
@@ -14167,7 +14255,7 @@
 	title     = {{An Extensible Platform for Product-Line Behavioural Analysis}},
 	booktitle = splatools,
 	pages     = {102--109},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2647908.2655973},
 	publisher = acm,
 	address   = ny,
@@ -14183,7 +14271,7 @@
 	title     = {{Towards the Assessment of Software Product Line Tests: A Mutation System for Variable Systems}},
 	booktitle = splatools,
 	pages     = {62--69},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2647908.2655968},
 	publisher = acm,
 	address   = ny,
@@ -14197,7 +14285,7 @@
 	title     = {{Identifying Inactive Code in Product Lines With Configuration-Aware System Dependence Graphs}},
 	booktitle = splc,
 	pages     = {52--61},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2648511.2648517},
 	publisher = acm,
 	address   = ny,
@@ -14212,7 +14300,7 @@
 	title     = {{A Cover-Based Approach for Configuration Repair}},
 	booktitle = splc,
 	pages     = {157--166},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2648511.2648528},
 	publisher = acm,
 	address   = ny,
@@ -14227,7 +14315,7 @@
 	title     = {{Delta-Oriented Multi Software Product Lines}},
 	booktitle = splc,
 	pages     = {232--236},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2648511.2648536},
 	publisher = acm,
 	address   = ny,
@@ -14242,7 +14330,7 @@
 	title     = {{A Software Product Line Approach for Semantic Specification of Block Libraries in Dataflow Languages}},
 	booktitle = splc,
 	pages     = {217--226},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2648511.2648534},
 	publisher = acm,
 	address   = ny,
@@ -14257,7 +14345,7 @@
 	title     = {{Generation, Composition, and Verification of Families of Human-Intensive Systems}},
 	booktitle = splc,
 	pages     = {207--216},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2648511.2648533},
 	publisher = acm,
 	address   = ny,
@@ -14273,7 +14361,7 @@
 	title     = {{Integrated Management of Variability in Space and Time in Software Families}},
 	booktitle = splc,
 	pages     = {22--31},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2648511.2648514},
 	publisher = acm,
 	address   = ny,
@@ -14288,7 +14376,7 @@
 	title     = {{Behavioral Relations in a Process Algebra for Variants}},
 	booktitle = splc,
 	pages     = {82--91},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2648511.2648520},
 	publisher = acm,
 	address   = ny,
@@ -14303,7 +14391,7 @@
 	title     = {{Experiences in Teaching Variability Modeling and Model-Driven Generative Techniques}},
 	booktitle = spltea,
 	pages     = {26--29},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2647908.2655963},
 	publisher = acm,
 	address   = ny,
@@ -14318,7 +14406,7 @@
 	title     = {{Teaching Variability Engineering to Cognitive Psychologists}},
 	booktitle = spltea,
 	pages     = {16--23},
-	location  = {Florence, Italy},
+	location  = florence,
 	doi       = {10.1145/2647908.2655961},
 	publisher = acm,
 	address   = ny,
@@ -24916,7 +25004,7 @@
 	title     = {{Extracting and Evolving Mobile Games Product Lines}},
 	booktitle = splc,
 	pages     = {70--81},
-	location  = {Rennes, France},
+	location  = rennes,
 	doi       = {10.1007/11554844_8},
 	publisher = springer,
 	address   = berlinheidelberg,
@@ -25694,7 +25782,7 @@
 	number    = {109},
 	doi       = {10.5555/770650.770653},
 	publisher = {Belltown Media},
-	address   = {Houston, TX},
+	address   = houston,
 	month     = may,
 	year      = 2003,
 	ektags    = {Linux},
@@ -27136,7 +27224,7 @@
 	note      = {Website: \url{https://busybox.net/}},
 	doi       = {10.5555/364412.364422},
 	publisher = {Belltown Media},
-	address   = {Houston, TX},
+	address   = houston,
 	year      = 2000,
 }
 
