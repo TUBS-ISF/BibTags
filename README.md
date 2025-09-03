@@ -38,7 +38,7 @@ Entries and their fields are sorted by the `sort` script.
 - **Maintain consistent order of attributes** of entries. If you want to add a new entry, a good strategy is to copy an existing entry of the same type and adapt it.
 - **Keys are formatted** using author names, publication venue, and year of publication: `<author abbreviation>:<venue><year>`. For example a paper published at `ICSE` in `2005` by `Alice Change` and `Bob Delta` would have the key `CD:ICSE05`. In the following each key element is explained:
   - `<author abbreviation>`:
-    - If the entry is a thesis: `<author abbreviation>` = `<last name of author>`. In case of a key conflict use `<author abbreviation>` = `<last name of author><first letter of first name of author>`
+    - If the entry is a thesis: `<author abbreviation>` = `<last name of author>`. In case of a key conflict use `<author abbreviation>` = `<last name of author><first name of author>`
     - If entry has <=4 authors: `<author abbreviation>` = `<first letter of last name of author 1><first letter of last name of author 2>...`
     - If the entry has >4 authors: `<author abbreviation>` = `<first letter of last name of author 1><first letter of last name of author 2><first letter of last name of author 3>+`
   - `<venue>`: Each venue has an abbreviation (e.g., `ICSE`, `SoSym`, `ESECFSE`). These abbreviations are defined in `MYabrv.bib` and `MYshort.bib`. If a venue you encounter is not contained in these files, please add it (sorted in ascending alphabetic order). Use this abbreviation as the `<venue>` value.
