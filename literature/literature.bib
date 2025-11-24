@@ -117,6 +117,7 @@
 @String{zuerich = "Zürich, Switzerland"}
 @String{uk = "UK"}
 @String{abingdon = "Abingdon, UK"}
+@String{bristol = "Bristol, UK"}
 @String{cambridge = "Cambridge, UK"}
 @String{cheltenham = "Cheltenham, UK"}
 @String{chichester = "Chichester, UK"}
@@ -159,6 +160,7 @@
 @String{philadelphia = "Philadelphia, PA, USA"}
 @String{piscataway = "Piscataway, NJ, USA"}
 @String{pittsburgh = "Pittsburgh, PA, USA"}
+@String{portoalegre = "Porto Alegre, RS, Brasil"}
 @String{providence = "Providence, RI, USA"}
 @String{redbank = "Red Bank, NJ, USA"}
 @String{richland = "Richland, SC, USA"}
@@ -304,7 +306,7 @@
 @techreport{TRLA:TR25,
 	author    = {T\"{e}rnava, Xhevahire and Randrianaina, Georges Aaron and Lesoil, Luc and Acher, Mathieu},
 	title     = {{Small Yet Configurable: Unveiling Null Variability in Software}},
-	institution = {HAL},
+	institution = hal,
 	note      = toappear,
 	month     = jun,
 	year      = 2025,
@@ -528,7 +530,7 @@
 	author    = {Jourdan, Youenn Merel and Acher, Mathieu and Maumet, Camille},
 	title     = {{In the Search for Truth: Navigating Variability in Neuroimaging Software Pipelines}},
 	booktitle = splc,
-	pages     = {129–-135},
+	pages     = {129--135},
 	location  = acoruna,
 	doi       = {10.1145/3744915.3748470},
 	publisher = acm,
@@ -556,7 +558,7 @@
 	author    = {T{\"e}rnava, Xhevahire and Lefeuvre, Romain and Perez, Quentin and Khelladi, Djamel Eddine and Acher, Mathieu and Combemale, Beno{\^\i}t},
 	title     = {{On the Effect of Feature Reduction on Energy Consumption: An Exploratory Study}},
 	booktitle = splc,
-	pages     = {57–-68},
+	pages     = {57--68},
 	location  = acoruna,
 	doi       = {10.1145/3744915.3748463},
 	publisher = acm,
@@ -717,7 +719,7 @@
 	location  = {Recife/PE},
 	doi       = {10.5753/sbes.2025.11607},
 	publisher = {SBC},
-	address   = {Porto Alegre, RS, Brasil},
+	address   = portoalegre,
 	year      = 2025,
 	ektags    = {Linux},
 	issn      = {2833-0633},
@@ -1214,7 +1216,7 @@
 	booktitle = uss,
 	pages     = {3927--3943},
 	publisher = usenix,
-	address   = {Philadelphia, PA},
+	address   = philadelphia,
 	month     = aug,
 	year      = 2024,
 	ektags    = {debloating},
@@ -1575,7 +1577,7 @@
 	author    = {Wayne, Hillel},
 	title     = {{The Hunt for the Missing Data Type}},
 	note      = {Accessed: 2024-03-22},
-	howpublished = {\url{https://www.hillelwayne.com/post/graph-types}},
+	howpublished = {Website: \url{https://www.hillelwayne.com/post/graph-types}},
 	year      = 2024,
 }
 
@@ -3986,7 +3988,7 @@
 }
 
 @article{FHI+:AIJ21,
-	author    = {Nils Froleyks and Marijn Heule and Markus Iser and Matti Järvisalo and Martin Suda},
+	author    = {Nils Froleyks and Marijn Heule and Ashlin Iser and Matti Järvisalo and Martin Suda},
 	title     = {{SAT Competition 2020}},
 	journal   = aij,
 	volume    = {301},
@@ -10846,7 +10848,7 @@
 }
 
 @article{BBIS:AIJ16,
-	author    = {Tom{\'{a}}\v{s} Balyo and Armin Biere and Markus Iser and Carsten Sinz},
+	author    = {Tom{\'{a}}\v{s} Balyo and Armin Biere and Ashlin Iser and Carsten Sinz},
 	title     = {{SAT Race 2015}},
 	journal   = aij,
 	volume    = {241},
@@ -11521,6 +11523,19 @@
 	acmid     = {2884823},
 	isbn      = {978-1-4503-3900-1},
 	tttags    = {Compositional Feature Modeling, SPL Analysis, Feature Model Analysis},
+}
+
+@inproceedings{PCFS:ENASE16,
+	author    = {Pereira, Juliana Alves and Constantino, Kattiana and Figueiredo, Eduardo and Saake, Gunter},
+	title     = {{Quantitative and Qualitative Empirical Analysis of Three Feature Modeling Tools}},
+	booktitle = enase,
+	pages     = {66--88},
+	doi       = {10.1007/978-3-319-56390-9_4},
+	publisher = springer,
+	address   = cham,
+	month     = apr,
+	year      = 2016,
+	ektags    = {tooling},
 }
 
 @inproceedings{BVW:FMSPLE16subsumedbyBVW:FASE17,
@@ -12216,6 +12231,18 @@
 	isbn      = {978-1-4503-4050-2},
 	keywords  = {boolean functions, feature interactions, fourier transform, performance},
 	tttags    = {Non-Functional Properties,Performance,Feature Interaction},
+}
+
+@inproceedings{MVV:StarAI16,
+	missing   = noaddress # nopublisher # nodoi # nomonth,
+	author    = {Meert, Wannes and Vlasselaer, Jonas and Van den Broeck, Guy},
+	title     = {{A Relaxed Tseitin Transformation for Weighted Model Counting}},
+	booktitle = starai,
+	pages     = {1--7},
+	location  = ny,
+	url       = {https://lirias.kuleuven.be/1656484},
+	year      = 2016,
+	ektags    = {CNF transformation},
 }
 
 @inproceedings{NSS:VAMOS16,
@@ -17308,7 +17335,7 @@
 }
 
 @inproceedings{IST:SAT13,
-	author    = {Iser, Markus and Sinz, Carsten and Taghdiri, Mana},
+	author    = {Iser, Ashlin and Sinz, Carsten and Taghdiri, Mana},
 	title     = {{Minimizing Models for Tseitin-Encoded SAT Instances}},
 	booktitle = sat,
 	pages     = {224--232},
@@ -19524,6 +19551,14 @@
 	year      = 2012,
 }
 
+@misc{B12,
+	author    = {Bernhardt, Gary},
+	title     = {{Functional Core, Imperative Shell}},
+	note      = {Accessed: 2020-12-07},
+	howpublished = {Website: \url{https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell}},
+	year      = 2012,
+}
+
 @phdthesis{Siegmund12,
 	renamedfrom = {S12},
 	author    = {Janet Siegmund},
@@ -21195,7 +21230,7 @@
 @misc{C11,
 	author    = {Colbourn, Charles J},
 	title     = {{Covering Arrays and Hash Families}},
-	howpublished = {\url{https://doi.org/10.3233/978-1-60750-663-8-99}},
+	howpublished = {Website: \url{https://doi.org/10.3233/978-1-60750-663-8-99}},
 	year      = 2011,
 }
 
@@ -22651,6 +22686,20 @@
 	issn      = {1567-7818},
 }
 
+@article{S:PDM09,
+	missing   = nomonth # nodoi,
+	author    = {Semenov, Aleksandr Anatol'evich},
+	title     = {{About Tseitin Transformation in Logical Equations}},
+	journal   = {Prikladnaya Diskretnaya Matematika},
+	volume    = {4},
+	number    = {6},
+	pages     = {28--50},
+	url       = {https://www.mathnet.ru/eng/pdm158},
+	publisher = {Tomsk State University},
+	year      = 2009,
+	ektags    = {CNF transformation},
+}
+
 @article{GFP:Software09,
 	author    = {Gall, Harald C. and Fluri, Beat and Pinzger, Martin},
 	title     = {{Change Analysis With Evolizer and ChangeDistiller}},
@@ -22890,6 +22939,19 @@
 	year      = 2009,
 	isbn      = {978-1-4244-3453-4},
 	tttags    = {Feature Modeling,Abstract Features,Feature Mapping,SPL Refactoring,Random Feature Models},
+}
+
+@inproceedings{CMV:DATE09,
+	missing   = noaddress,
+	author    = {Chambers, Benjamin and Manolios, Panagiotis and Vroon, Daron},
+	title     = {{Faster SAT Solving with Better CNF Generation}},
+	booktitle = date,
+	pages     = {1590--1595},
+	doi       = {10.1109/DATE.2009.5090918},
+	publisher = ieee,
+	month     = apr,
+	year      = 2009,
+	ektags    = {CNF transformation},
 }
 
 @inproceedings{TRC:VaMoS09,
@@ -23180,6 +23242,18 @@
 	address   = washington,
 	year      = 2009,
 	tstags    = {software product lines,pl technique application},
+}
+
+@inproceedings{SGEL:MODELS09,
+	missing   = nomonth,
+	author    = {Schwanninger, Christa and Groher, Iris and Elsner, Christoph and Lehofer, Martin},
+	title     = {{Variability Modelling Throughout The Product Line Lifecycle}},
+	booktitle = models,
+	pages     = {685--689},
+	doi       = {10.1007/978-3-642-04425-0_55},
+	publisher = springer,
+	address   = berlinheidelberg,
+	year      = 2009,
 }
 
 @inproceedings{YD:NaBIC09,
@@ -24408,6 +24482,15 @@
 	tttags    = {Feature Modeling,Survey,SAT,CSP,SMT,BDD,DIMACS,Decision Propagation,Automated Theorem Proving,Interactive Theorem Proving},
 }
 
+@techreport{H:TR08,
+	author    = {Huang, Jinbo},
+	title     = {{Tinisat in SAT Competition 2008}},
+	institution = unihelsinki,
+	url       = {https://satisfiability.org/competition/sat-race-2008/descriptions/solver_18.pdf},
+	year      = 2008,
+	ektags    = {satisfiability},
+}
+
 @techreport{R08,
 	author    = {Rice, Michael and Kulhari, Sanjay},
 	title     = {{A Survey of Static Variable Ordering Heuristics for Efficient BDD/MDD Construction}},
@@ -24736,6 +24819,18 @@
 	publisher = springer,
 	address   = cham,
 	year      = 2007,
+}
+
+@inproceedings{H:CP07,
+	author    = {Huang, Jinbo},
+	title     = {{A Case for Simple SAT Solvers}},
+	booktitle = cp,
+	pages     = {839--846},
+	doi       = {10.1007/978-3-540-74970-7_62},
+	publisher = springer,
+	address   = berlinheidelberg,
+	year      = 2007,
+	ektags    = {satisfiability},
 }
 
 @inproceedings{HH:CPAIOR07,
@@ -25620,6 +25715,18 @@
 	address   = berlinheidelberg,
 	month     = may,
 	year      = 2006,
+}
+
+@inproceedings{N:ARW06,
+	missing   = nodoi,
+	author    = {Navarro-P{\'e}rez, Juan Antonio},
+	title     = {{Translations to Propositional Satisfiability}},
+	booktitle = arw,
+	pages     = {31--32},
+	address   = bristol,
+	month     = apr,
+	year      = 2006,
+	ektags    = {CNF transformation},
 }
 
 @inproceedings{KV06,
@@ -26804,6 +26911,14 @@
 	tttags    = {},
 }
 
+@misc{C05,
+	author    = {Cockburn, Alistair},
+	title     = {{Hexagonal Architecture}},
+	note      = {Accessed: 2020-12-07},
+	howpublished = {Website: \url{https://alistair.cockburn.us/hexagonal-architecture/}},
+	year      = 2005,
+}
+
 @phdthesis{Clifton05,
 	renamedfrom = {C05},
 	author    = {Clifton, Curtis},
@@ -27101,6 +27216,18 @@
 	year      = 2004,
 	isbn      = {0-7695-2094-4},
 	tctags    = {classified by Christian+Thomas,fault-tree analysis, testing,family-product-based analysis,family-wide specification, feature-based specification,annotation-based implementation,design,subsumed by LDL07},
+}
+
+@inproceedings{V:ASPDAC04,
+	author    = {Velev, Miroslav N.},
+	title     = {{Efficient Translation of Boolean Formulas to CNF in Formal Verification of Microprocessors}},
+	booktitle = aspdac,
+	pages     = {310--315},
+	doi       = {10.1109/ASPDAC.2004.1337587},
+	publisher = ieee,
+	month     = jan,
+	year      = 2004,
+	ektags    = {CNF transformation},
 }
 
 @inproceedings{SH04,
@@ -27569,6 +27696,7 @@
 }
 
 @book{DF03,
+	missing   = noaddress,
 	author    = {David S. Dummit and Richard M. Foote},
 	title     = {{Abstract Algebra}},
 	publisher = wiley,
@@ -28120,6 +28248,17 @@
 	isbn      = {978-0-201-74572-6},
 }
 
+@incollection{vSBCR02,
+	author    = {van Solingen, Rini and Basili, Victor R. and Caldiera, Gianluigi and Rombach, H. Dieter},
+	title     = {{Goal Question Metric (GQM) Approach}},
+	booktitle = {Encyclopedia of Software Engineering},
+	doi       = {10.1002/0471028959.sof142},
+	publisher = wiley,
+	month     = jan,
+	year      = 2002,
+	isbn      = {9780471028956},
+}
+
 @inproceedings{LKF02,
 	author    = {Li, Harry and Krishnamurthi, Shriram and Fisler, Kathi},
 	title     = {{Verifying Cross-Cutting Features as Open Systems}},
@@ -28234,6 +28373,7 @@
 }
 
 @inproceedings{DD:GTMDA02,
+	missing   = noaddress,
 	author    = {D'Hondt, Maja and D'Hondt, Theo},
 	title     = {{The Tyranny of the Dominant Model Decomposition}},
 	booktitle = gtmda,
@@ -29231,6 +29371,20 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 1999 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+@article{K:DAM99,
+	author    = {Kullmann, Oliver},
+	title     = {{On a Generalization of Extended Resolution}},
+	journal   = {Discrete Applied Mathematics},
+	volume    = {96-97},
+	pages     = {149--176},
+	doi       = {10.1016/S0166-218X(99)00037-2},
+	publisher = elsevier,
+	month     = oct,
+	year      = 1999,
+	ektags    = {CNF transformation},
+	issn      = {0166-218X},
+}
+
 @article{SHB+:TC99,
 	author    = {Sanchez, Eduardo and Haenni, Jacques-Olivier and Beuchat, Jean-Luc and Stauffer, Andr\'{e} and Perez-Uribe, Andr\'{e}s and Sipper, Moshe},
 	title     = {{Static and Dynamic Configurable Systems}},
@@ -29609,6 +29763,19 @@
 	publisher = springer,
 	address   = berlinheidelberg,
 	year      = 1998,
+}
+
+@inproceedings{NRW:CADE98,
+	author    = {Nonnengart, Andreas and Rock, Georg and Weidenbach, Christoph},
+	title     = {{On Generating Small Clause Normal Forms}},
+	booktitle = cade,
+	pages     = {397--411},
+	doi       = {10.1007/BFb0054274},
+	publisher = springer,
+	address   = berlinheidelberg,
+	month     = jul,
+	year      = 1998,
+	ektags    = {CNF transformation},
 }
 
 @inproceedings{YCB+:ASPDAC98,
@@ -30008,6 +30175,20 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 1996 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{SM:SACJ96,
+	author    = {Sutcliffe, Geoff and Melville, Stuart},
+	title     = {{The Practice of Clausification in Automatic Theorem Proving}},
+	journal   = {South African Computer Journal},
+	volume    = {18},
+	pages     = {57--68},
+	doi       = {10500/24223},
+	publisher = {South African Computer Society (SAICSIT)},
+	month     = dec,
+	year      = 1996,
+	ektags    = {CNF transformation},
+	issn      = {2313-7835},
+}
 
 @article{JSHS96,
 	author    = {Jungclaus, Ralf and Saake, Gunter and Hartmann, Thorsten and Sernadas, Cristina},
@@ -30539,6 +30720,20 @@
 	year      = 1993,
 }
 
+@article{FKBL:RAIROITA93,
+	missing   = nomonth # nodoi,
+	author    = {Fl{\"o}gel, A. and {Kleine B{\"u}ning}, H. and Lettmann, T.},
+	title     = {{On the Restricted Equivalence for Subclasses of Propositional Logic}},
+	journal   = rairoita,
+	volume    = {27},
+	number    = {4},
+	pages     = {327--340},
+	url       = {https://www.numdam.org/item/?id=ITA_1993__27_4_327_0},
+	publisher = {EDP Sciences},
+	year      = 1993,
+	ektags    = {slicing},
+}
+
 @article{M:SCP93,
 	author    = {John C. Mitchell},
 	title     = {{On Abstraction and the Expressive Power of Programming Languages}},
@@ -30700,6 +30895,15 @@
 	tttags    = {Feature Orientation},
 }
 
+@misc{dimacs,
+	author    = {DIMACS},
+	title     = {{Satisfiability: Suggested Format}},
+	note      = {Accessed: 2025-11-12},
+	howpublished = {Website: \url{https://www21.in.tum.de/~lammich/2015_SS_Seminar_SAT/resources/dimacs-cnf.pdf}},
+	year      = 1993,
+	ektags    = {CNF transformation},
+}
+
 @phdthesis{Long93,
 	renamedfrom = {L93},
 	author    = {David E. Long},
@@ -30710,6 +30914,20 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 1992 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{BdlT:JSC92,
+	author    = {{Boy de la Tour}, Thierry},
+	title     = {{An Optimality Result for Clause Form Translation}},
+	journal   = jsc,
+	volume    = {14},
+	number    = {4},
+	pages     = {283--301},
+	doi       = {10.1016/0747-7171(92)90009-S},
+	month     = oct,
+	year      = 1992,
+	ektags    = {CNF transformation},
+	issn      = {0747-7171},
+}
 
 @article{M92,
 	author    = {Meyer, Bertrand},
@@ -31138,6 +31356,13 @@
 	year      = 1988,
 }
 
+@book{KR88,
+	author    = {Kernighan, Brian W. and Ritchie, Dennis M.},
+	title     = {{The C Programming Language}},
+	publisher = prenticehall,
+	year      = 1988,
+}
+
 @book{M88,
 	author    = {Meyer, Bertrand},
 	title     = {{Object-Oriented Software Construction}},
@@ -31242,10 +31467,11 @@
 	year      = 1986,
 }
 
-@article{PG:SC86,
+@article{PG:JSC86,
+	renamedfrom = {PG:SC86},
 	author    = {Plaisted, David A and Greenbaum, Steven},
 	title     = {{A Structure-Preserving Clause Form Translation}},
-	journal   = {J.\ Symbolic Computation},
+	journal   = jsc,
 	volume    = {2},
 	number    = {3},
 	pages     = {293--304},
