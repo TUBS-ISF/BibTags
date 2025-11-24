@@ -44,7 +44,7 @@ When formatting an entry, check ALL of the following:
 
 #### Handle Conflicts:
 - If key exists, add suffix `b`, `c`, etc.
-- **IMPORTANT**: Only add `renamedFrom = {old-key},` field when changing an EXISTING key that's already in use - NEVER for new entries being added for the first time
+- If updating an old key, add `renamedFrom = {old-key},` field
 
 **Examples:**
 ```bibtex
