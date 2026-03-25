@@ -2,6 +2,8 @@
 
 This is BibTags, a BibTeX library that contains many curated literature references to papers in computer science, with a focus on variability and software product lines.
 
+[![Check Literature](https://github.com/TUBS-ISF/BibTags/actions/workflows/check.yml/badge.svg)](https://github.com/TUBS-ISF/BibTags/actions/workflows/check.yml)
+
 ## How To Use
 1. Clone this repo (e.g., `git clone https://github.com/TUBS-ISF/BibTags.git`) or add as a submodule (e.g., `git submodule add https://github.com/TUBS-ISF/BibTags.git`)
 2. Run `./run clean`
@@ -184,4 +186,5 @@ There are several options:
   ```
   biber --cache # check path first
   rm -rf "$(biber --cache)" # then remove
-  ```
+  ``` 
+
