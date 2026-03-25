@@ -26,14 +26,10 @@ jobs:
         distribution: 'temurin'
         java-version: '21'
     - name: Setup TeX Live
-      uses: teatimeguest/setup-texlive-action@v3
+      uses: zauguin/install-texlive@v4
       with:
-        packages: |
-          scheme-basic
-          csquotes
-          natbib
-          biblatex
-          biber
+        packages: >
+          scheme-basic csquotes natbib biblatex biber
     - name: Test literature
       run: ./run test
     - name: Archive logs
