@@ -188,3 +188,6 @@ There are several options:
   rm -rf "$(biber --cache)" # then remove
   ``` 
 
+## License
+
+All data in this repository is released under the [Creative Commons CC-BY-SA 4.0 license](LICENSE.txt).
