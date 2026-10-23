@@ -195,6 +195,18 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Unpublished Entries %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+@article{BGH:TDSC26,
+	author    = {Bi, Fangqi and Gong, Qiwen and Hou, Pengpeng},
+	title     = {{KconfigHealer: Leveraging Large Language Models for Repairing Linux Kernel Build Failures}},
+	journal   = tdsc,
+	pages     = {1--15},
+	note      = toappear,
+	doi       = {10.1109/TDSC.2026.3730867},
+	publisher = ieee,
+	year      = 2026,
+	ektags    = {KConfig, Linux},
+}
+
 @inproceedings{B:VARIABILITY26,
 	author    = {Braha, Julian},
 	title     = {{kconfirm: A Fast Static Checker for Kconfig}},
@@ -205,11 +217,24 @@
 	address   = cham,
 	month     = sep,
 	year      = 2026,
+	ektags    = {KConfig},
 }
 
 @inproceedings{BSF+:VARIABILITY26,
 	author    = {Benavides, David and Sundermann, Chico and Feichtinger, Kevin and Galindo, Jos{\'e} A. and Rabiser, Rick and Th\"{u}m, Thomas},
 	title     = {{UVL: Feature Modelling With the Universal Variability Language}},
+	booktitle = variability,
+	location  = {Limassol, Cyprus},
+	note      = toappear,
+	publisher = springer,
+	address   = cham,
+	month     = sep,
+	year      = 2026,
+}
+
+@inproceedings{HBGB:VARIABILITY26,
+	author    = {Horcas Aguilera, Jose Miguel and Benitez, Francisco Sebastian and Galindo, Jos{\'e} A. and Benavides, David},
+	title     = {{Automated Analysis of UVL using Satisfiability Modulo Theories}},
 	booktitle = variability,
 	location  = {Limassol, Cyprus},
 	note      = toappear,
@@ -666,6 +691,20 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2025 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{FHH+:JSS25,
+	subsumes  = {FHH+:SPLC24},
+	author    = {Fernandez-Amoros, David and Heradio, Ruben and Horcas Aguilera, Jose Miguel and Galindo, Jos\'{e} A. and Benavides, David and Fuentes, Lidia},
+	title     = {{Pragmatic Random Sampling of Kconfig-based Systems: A Unified Approach}},
+	journal   = jss,
+	volume    = {230},
+	doi       = {10.1016/j.jss.2025.112577},
+	publisher = elsevier,
+	month     = dec,
+	year      = 2025,
+	articleno = {112577},
+	issn      = {0164-1212},
+}
 
 @article{KST+:TOSEM25,
 	author    = {Kuiter, Elias and Sundermann, Chico and Th{\"{u}}m, Thomas and He{\ss}, Tobias and Krieter, Sebastian and Saake, Gunter},
@@ -1599,6 +1638,7 @@
 }
 
 @inproceedings{FHH+:SPLC24,
+	subsumedby = {FHH+:JSS25},
 	author    = {Fernandez-Amoros, David and Heradio, Ruben and Horcas Aguilera, Jose Miguel and Galindo, Jos\'{e} A. and Benavides, David and Fuentes, Lidia},
 	title     = {{Pragmatic Random Sampling of the Linux Kernel: Enhancing the Randomness and Correctness of the Conf Tool}},
 	booktitle = splc,
@@ -13188,7 +13228,7 @@
 @misc{Linux:Development,
 	author    = {Corbet, Jonathan and Kroah-Hartman, Greg and McPherson, Amanda},
 	title     = {{Linux Kernel Development: How Fast It Is Going, Who Is Doing It, What They Are Doing, And Who Is Sponsoring It}},
-	note      = {Available online at \url{https://www.linuxfoundation.jp/events/2016/08/linux-kernel-development-2016/}; visited on June 29, 2024},
+	note      = {Available online at \url{https://www.linuxfoundation.org/hubfs/lf_pub_whowriteslinux2016.pdf}; visited on September 28, 2026},
 	howpublished = {Website},
 	year      = 2016,
 	ektags    = {Linux},
@@ -14544,6 +14584,16 @@
 	month     = oct,
 	year      = 2015,
 	typo3tags = {SupervisorTT},
+}
+
+@mastersthesis{Hengelein15,
+	author    = {Hengelein, Stefan},
+	title     = {{Analyzing the Internal Consistency of the Linux KConfig Model}},
+	type      = master,
+	school    = unierlangen,
+	month     = jul,
+	year      = 2015,
+	pdf       = {https://www4.cs.fau.de/Ausarbeitung/MA-I4-2015-04-Hengelein.pdf},
 }
 
 @mastersthesis{Schmorleiz15,
